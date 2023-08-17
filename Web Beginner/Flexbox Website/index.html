@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="wrapper">
+		<header class="top">
+			<a href="#">
+				<img src="img/logo.png" alt="">
+			</a>
+		</header>
+		<nav class="flex-nav">
+			<a class="toggleNav" href="#">☰ Menu</a>
+			<ul>
+				<li><a href="">Item 1</a></li>
+				<li><a href="">Item 2</a></li>
+				<li><a href="">Item 3</a></li>
+				<li><a href="">Item 4</a></li>
+				<li class="cocial"><a href=""><i class="fa fa-telegram"></i></a></li>
+				<li class="cocial"><a href=""><i class="fa fa-github"></i></a></li>
+				<li class="cocial"><a href=""><i class="fa fa-facebook"></i></a></li>
+			</ul>
+		</nav>
+		<section class="banner">
+			<img src="https://placekitten.com/640/360" alt="random img">
+		</section>
+		<section class="content">
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores culpa possimus quibusdam accusamus, illum, error dicta autem earum itaque, dolorem sunt, impedit aliquid obcaecati incidunt provident hic deleniti reprehenderit quisquam blanditiis nulla ea in molestiae rem corporis veritatis! Dignissimos commodi voluptatum accusamus voluptatem error cumque consectetur est eos, ad repudiandae asperiores. Ratione impedit aspernatur asperiores laboriosam reiciendis sit, aut rerum architecto, ipsam excepturi! Aliquam animi sed pariatur eum porro molestias sapiente, quis obcaecati, modi accusantium excepturi voluptate ducimus reiciendis aliquid laborum nam cupiditate! Nesciunt iusto laboriosam eveniet reiciendis, fugiat, quis, itaque esse nulla rem vel quisquam reprehenderit accusamus ducimus porro.
+			</p>
+		</section>
+		<section class="signup">
+			<form action="">
+				<input type="text" placeholder="Name">
+				<input type="text" placeholder="Email">
+				<input type="submit" value="Sing up">
+			</form>
+		</section>
+		<footer>
+			<p>Lorem ipsum dolor sit amet.</p>
+		</footer>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  	<script>
+		$(function() {
+	  	$('.toggleNav').on('click',function() {
+	    	$('.flex-nav ul').toggle();
+	  	});
+		});
+  	</script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+form {
+	color: #fff;
+	font-size: 25px;
+	font-family: system-ui;
+	padding:100px;
+}
+input {
+	height: 50px;
+	width: 400px;
+}
+header {
+	position: sticky;
+	top: 0;
+	background-color: red;
+}
+nav {
+	height: 100px;
+	width: 500px;
+	background-color: darkred;
+	float: right;
+}
+nav li {
+	display: inline-block;
+	margin-right: 5px;
+}
+nav li > a {
+	text-decoration: none;
+	color: #000;
+	font-size: 25px;
+	line-height: 100px;
+	font-family: system-ui;
+}
+nav li > a:hover {
+	color: #fff;
+}
+.container {
+	background-color: darkred;
+	width: 100%;
+	max-width: 1600px;
+	padding: 15px;
+	margin: 0 auto;
+}
+.banner, .content {
+	background-color: darkred;
+}
+.banner > .container {
+	background-color: red;
+}
+.content > .container {
+	background-color: red;
+}
+.banner h2 {
+	font-size: 25px;
+	font-family: system-ui;
+	text-align: center;
+	padding-top: 100px;
+}
+.logo {
+	height: 100px;
+	float: left;
+}
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.send-btn{
+	display: block;
+	width: 50px;
+	height: 30px;
+	padding: 20px;
+	font-size: 25px;
+	text-align: center;
+	text-decoration: none;
+	background: darkred;
+	color: #000;
+	border-radius: 10px;
+	margin: 50px auto;	
+}
+.send-btn:hover {
+	background-color: #fff;
+	color: #000;
+}
+.news {
+	float: left;
+	width: 50%;
+}
+.sidebar {
+	float: right;
+	width: 50%;
+}
+.news-item {
+	height: 150px;
+	padding: 50px;
+}
+.news-item-content {
+	width: 50%;
+	float: left;
+}
+.news-item-image {
+	width: 30%;
+	float: right;
+}
+.sidebar > img {
+	width: 80%;
+	margin: 50px auto;
+}

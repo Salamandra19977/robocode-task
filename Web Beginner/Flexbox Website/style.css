@@ -1,0 +1,124 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: rgb(237,93,93);
+	background: -moz-linear-gradient(90deg, rgba(237,93,93,1) 0%, rgba(253,29,29,1) 46%, rgba(0,0,0,1) 100%);
+	background: -webkit-linear-gradient(90deg, rgba(237,93,93,1) 0%, rgba(253,29,29,1) 46%, rgba(0,0,0,1) 100%);
+	background: linear-gradient(90deg, rgba(237,93,93,1) 0%, rgba(253,29,29,1) 46%, rgba(0,0,0,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ed5d5d",endColorstr="#000000",GradientType=1);
+}
+ul {
+	display: flex;
+	justify-content: space-around;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	border: 5px solid darkred;
+}
+ul > li {
+	display: flex;
+	justify-content: center;
+	flex: 3;
+	text-align: center;
+}
+li:hover {
+	background: rgba(0, 0, 0, 0.4);
+}
+a {
+	text-decoration: none;
+	color: #fff;
+	padding: 10px;
+	font-size: 18px;
+}
+header {
+	display: flex;
+	padding: 50px;
+	justify-content: center;
+	background: rgba(0, 0, 0, 0.4);
+	margin-bottom: 10px;
+}
+section, footer {
+	margin-top: 10px;
+	padding: 20px;
+	color: #fff;
+	text-align: center;
+	font-size: 18px;
+	font-weight: 100;
+	background: rgba(0, 0, 0, 0.4);
+}
+input {
+	padding: 15px;
+	margin: 5px;
+}
+.top img {
+	height: 150px;
+}
+.social {
+	flex: 1;
+}
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	max-width: 1000px;
+	padding: 25px;	
+}
+.flex-nav {
+	background: rgba(0, 0, 0, 0.4);
+}
+.banner img {
+	width: 100%;
+}
+.toggleNav {
+	display: none;
+	text-align: center;
+}
+@media(max-width: 1000px) {
+	ul {
+		flex-wrap: wrap;
+	}
+	ul > li {
+		flex: 1 1 50%;
+	}
+	.cocial {
+		flex: 1 1 20%;
+	}
+}
+@media(max-width: 500px) {
+	ul {
+		flex-wrap: wrap;
+	}
+	ul > li {
+		flex: 0 1 100%;
+	}
+	.cocial {
+		flex: 1 1 20%;
+	}
+	.flex-nav{
+		order: 0;
+		margin-bottom: 10px;
+	}
+	.flex-nav > ul{
+		display: none;
+	}
+	.top {
+		order: 1;
+	}
+	.content {
+		order: 2;
+	}
+	.signup {
+		order: 3;
+	}
+	.banner {
+		order: 4;
+	}
+	footer {
+		order: 5;
+	}
+	.toggleNav {
+		display: block;
+	}
+}

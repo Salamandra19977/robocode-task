@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+	<div style="display: flex; flex-direction: row; justify-content: space-around;" class="container">
+		<div onclick="$(this).hide(100)" style="background: yellow;width: 200px; height: 200px; margin: 5px;"></div>
+		<div onclick="$(this).hide(200)" style="background: green;width: 200px; height: 200px; margin: 5px;"></div>
+		<div onclick="$(this).hide(300)" style="background: black;width: 200px; height: 200px; margin: 5px;"></div>
+		<div onclick="$(this).hide(400); alert('hide');" style="background: violet;width: 200px; height: 200px; margin: 5px;"></div>
+		<div onclick="show()" style="display:flex;justify-content: center; align-items: center; border: solid black 2px; background: white;width: 200px; height: 200px; margin: 5px;">Return</div>
+	</div>
+	<script src="main.js"></script>
+</body>
+</html>
